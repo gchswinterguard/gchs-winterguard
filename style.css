@@ -221,3 +221,9 @@ footer a{
 
     transition:transform .2s ease;
 }
+.social-buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+}
