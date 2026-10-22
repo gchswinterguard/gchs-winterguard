@@ -238,10 +238,11 @@ footer a{
 }
 .category-title{
     text-align:center;
-    margin-top:50px;
+    margin:60px 0 20px;
     color:#3f43dc;
+    font-size:2rem;
+    font-weight:bold;
 }
-
 .equipment-grid{
     max-width:1200px;
     margin:30px auto 60px;
