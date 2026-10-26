@@ -423,6 +423,14 @@ footer a{
         font-size:2rem;
     }
 }
-body{
-    background:red !important;
+
+@media screen and (max-width:768px){
+
+    .menu-toggle{
+        display:block !important;
+        background:red !important;
+        color:white !important;
+        font-size:40px !important;
+    }
+
 }
