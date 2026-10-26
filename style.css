@@ -161,7 +161,7 @@ footer a{
         url("images/page-header.png");
 
     background-size:cover;
-    background-position:center;
+    background-position:center 25%;
     background-repeat:no-repeat;
 
     color:white;
