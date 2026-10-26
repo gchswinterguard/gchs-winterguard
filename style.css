@@ -49,6 +49,10 @@ nav{
 
 .hero-content h1{
     font-size:4rem;
+}
+
+.hero-content h2{
+    font-size:3rem;
     letter-spacing:3px;
 }
 
