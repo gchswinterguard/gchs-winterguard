@@ -162,15 +162,9 @@
 
 <script>
 function toggleMenu() {
-    const menu = document.getElementById("navLinks");
-
-    if(menu.classList.contains("show")){
-        menu.classList.remove("show");
-    } else {
-        menu.classList.add("show");
-    }
+    document.getElementById("navLinks")
+        .classList.toggle("show");
 }
 </script>
-
 </body>
 </html>
