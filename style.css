@@ -303,6 +303,11 @@ footer a{
     font-weight:bold;
 }
 
+.menu-toggle{
+    display:none;
+}
+
+
 /* =========================
    MOBILE NAVIGATION
    ========================= */
@@ -334,6 +339,8 @@ footer a{
 
 @media screen and (max-width:768px){
 
+    /* Navigation */
+
     nav{
         flex-direction:row;
         justify-content:space-between;
@@ -348,6 +355,11 @@ footer a{
 
     .menu-toggle{
         display:block;
+        background:none;
+        border:none;
+        color:white;
+        font-size:2rem;
+        cursor:pointer;
     }
 
     .nav-links{
@@ -367,34 +379,53 @@ footer a{
         padding:15px 0;
 
         z-index:999;
+
+        transition:all .3s ease;
     }
 
     .nav-links.show{
-        display:flex;
+        display:flex !important;
     }
 
     .nav-links a{
         margin:8px 0;
         font-size:1rem;
+        color:white;
+        text-decoration:none;
     }
 
+    /* Hero Section */
+
     .hero{
-        height:75vh;
+        height:85vh;
+        min-height:700px;
         padding:20px;
+
+        background-size:cover;
+        background-position:center top;
+    }
+
+    .hero-content{
+        max-width:90%;
+        margin:auto;
     }
 
     .hero-content h1{
-        font-size:2.2rem;
+        font-size:2rem;
+        letter-spacing:2px;
+        margin-bottom:5px;
         line-height:1;
     }
 
     .hero-content h2{
-        font-size:1.8rem;
+        font-size:1.4rem;
+        letter-spacing:2px;
+        margin-bottom:15px;
         line-height:1;
     }
 
     .hero-content p{
-        font-size:1rem;
+        font-size:0.95rem;
     }
 
     .hero-buttons{
@@ -402,23 +433,30 @@ footer a{
         flex-direction:column;
         align-items:center;
         gap:10px;
+        margin-top:20px;
     }
 
     .btn{
         width:220px;
+        text-align:center;
     }
+
+    /* Homepage Cards */
 
     .quick-links{
         grid-template-columns:1fr;
         padding:30px 15px;
     }
 
-    .equipment-grid{
-        grid-template-columns:1fr;
+    .card{
+        text-align:center;
     }
+
+    /* Staff */
 
     .staff-gallery{
         justify-content:center;
+        padding:0 15px;
     }
 
     .staff-profile{
@@ -426,23 +464,35 @@ footer a{
         max-width:320px;
     }
 
+    /* Equipment Store */
+
+    .equipment-grid{
+        grid-template-columns:1fr;
+        padding:0 15px;
+    }
+
+    .product-card{
+        width:100%;
+    }
+
+    /* Content Cards */
+
     .content-card{
-        margin:20px;
+        margin:20px 15px;
         padding:25px;
     }
 
     .page-header h1{
         font-size:2rem;
     }
-}
 
-@media screen and (max-width:768px){
+    /* Social Icons */
 
-    .menu-toggle{
-        display:block !important;
-        background:red !important;
-        color:white !important;
-        font-size:40px !important;
+    .social-buttons{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
     }
 
 }
