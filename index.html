@@ -17,8 +17,10 @@
     <a href="index.html">
     <img src="images/logo.png" alt="GCHS Winterguard Logo" class="logo">
 </a>
-
-    <div class="nav-links">
+    <button class="menu-toggle" onclick="toggleMenu()">
+    ☰
+</button>
+    <div class="nav-links" id="navLinks">
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="staff.html">Staff</a>
@@ -157,6 +159,18 @@
     </p>
     <p>james.eversole@gallatin.kyschools.us</p>
 </footer>
+
+<script>
+function toggleMenu() {
+    const menu = document.getElementById("navLinks");
+
+    if(menu.classList.contains("show")){
+        menu.classList.remove("show");
+    } else {
+        menu.classList.add("show");
+    }
+}
+</script>
 
 </body>
 </html>
