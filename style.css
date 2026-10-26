@@ -92,11 +92,13 @@ nav{
 .mission h2{
     color:#3f43dc;
     margin-bottom:20px;
+        text-align:center;
 }
 
 .mission p{
     line-height:1.8;
     margin-bottom:15px;
+        text-align:center;
 }
 
 .quick-links{
