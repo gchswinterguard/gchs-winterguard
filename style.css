@@ -161,10 +161,10 @@ footer a{
         url("images/team-photo.png");
 
     background-size:cover;
-    background-position:center;
+    background-position:center 15%;
     background-repeat:no-repeat;
 
-    min-height:300px;
+    min-height:350px;
 
     display:flex;
     flex-direction:column;
