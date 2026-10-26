@@ -158,11 +158,14 @@ footer a{
             rgba(0,0,0,.55),
             rgba(0,0,0,.55)
         ),
-        url("images/team-photo.png");
+        url("images/page-header.png");
 
     background-size:cover;
-    background-position:center 15%;
+    background-position:center;
     background-repeat:no-repeat;
+
+    color:white;
+    text-align:center;
 
     min-height:350px;
 
@@ -171,12 +174,8 @@ footer a{
     justify-content:center;
     align-items:center;
 
-    color:white;
-    text-align:center;
-
     padding:50px 20px;
 }
-
 
 .page-header h1{
     font-family:'Bebas Neue', sans-serif;
