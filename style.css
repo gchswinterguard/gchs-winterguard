@@ -302,3 +302,89 @@ footer a{
     margin:5px;
     font-weight:bold;
 }
+
+/* =========================
+   MOBILE DEVICES
+   ========================= */
+
+@media (max-width: 768px) {
+
+    nav{
+        flex-direction:column;
+        padding:20px;
+    }
+
+    .nav-links{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        margin-top:15px;
+        gap:10px;
+    }
+
+    .nav-links a{
+        margin:0;
+        font-size:.9rem;
+    }
+
+    .logo{
+        height:80px;
+    }
+
+    .hero{
+        height:70vh;
+        padding:20px;
+    }
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    .hero-content h2{
+        font-size:2rem;
+    }
+
+    .hero-content p{
+        font-size:1.1rem;
+    }
+
+    .hero-buttons{
+        display:flex;
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .btn{
+        width:100%;
+        max-width:250px;
+        margin:auto;
+    }
+
+    .quick-links{
+        grid-template-columns:1fr;
+        padding:30px 20px;
+    }
+
+    .staff-gallery{
+        padding:0 15px;
+    }
+
+    .staff-profile{
+        width:100%;
+    }
+
+    .equipment-grid{
+        grid-template-columns:1fr;
+        padding:0 15px;
+    }
+
+    .content-card{
+        margin:30px 15px;
+        padding:25px;
+    }
+
+    .page-header h1{
+        font-size:2rem;
+    }
+
+}
