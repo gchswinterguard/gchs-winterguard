@@ -167,7 +167,18 @@
 
 <script>
 function toggleMenu() {
-    document.getElementById("navLinks").classList.toggle("show");
+
+    const menu = document.getElementById("navLinks");
+    const button = document.querySelector(".menu-toggle");
+
+    menu.classList.toggle("show");
+
+    if(menu.classList.contains("show")){
+        button.innerHTML = "✕";
+    } else {
+        button.innerHTML = "☰";
+    }
+
 }
 </script>
 </body>
