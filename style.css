@@ -353,14 +353,16 @@ footer a{
         height:60px;
     }
 
-    .menu-toggle{
-        display:block;
-        background:none;
-        border:none;
-        color:white;
-        font-size:2rem;
-        cursor:pointer;
-    }
+.menu-toggle{
+    display:block;
+    background:none;
+    border:none;
+    color:white;
+    font-size:2rem;
+    cursor:pointer;
+    width:40px;
+    height:40px;
+}
 
     .nav-links{
         display:none;
