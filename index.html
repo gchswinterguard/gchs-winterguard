@@ -16,7 +16,9 @@
 <nav>
 
     <a href="index.html">
-        <img src="images/logo.png" alt="GCHS Winterguard Logo" class="logo">
+        <img src="images/logo.png"
+             alt="GCHS Winterguard Logo"
+             class="logo">
     </a>
 
     <button class="menu-toggle" onclick="toggleMenu()">
@@ -25,15 +27,15 @@
 
     <div class="nav-links" id="navLinks">
 
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="staff.html">Staff</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="fundraisers.html">Fundraisers</a>
-        <a href="forms.html">Forms</a>
-        <a href="social.html">Social Media</a>
-        <a href="equipment.html">Equipment Store</a>
-        <a href="gallery.html">Gallery</a>
+        <a href="index.html" onclick="toggleMenu()">Home</a>
+        <a href="about.html" onclick="toggleMenu()">About</a>
+        <a href="staff.html" onclick="toggleMenu()">Staff</a>
+        <a href="schedule.html" onclick="toggleMenu()">Schedule</a>
+        <a href="fundraisers.html" onclick="toggleMenu()">Fundraisers</a>
+        <a href="forms.html" onclick="toggleMenu()">Forms</a>
+        <a href="social.html" onclick="toggleMenu()">Social Media</a>
+        <a href="equipment.html" onclick="toggleMenu()">Equipment Store</a>
+        <a href="gallery.html" onclick="toggleMenu()">Gallery</a>
 
     </div>
 
@@ -166,6 +168,7 @@
 </footer>
 
 <script>
+
 function toggleMenu() {
 
     const menu = document.getElementById("navLinks");
@@ -180,6 +183,17 @@ function toggleMenu() {
     }
 
 }
+
+function closeMenu() {
+
+    const menu = document.getElementById("navLinks");
+    const button = document.querySelector(".menu-toggle");
+
+    menu.classList.remove("show");
+    button.innerHTML = "☰";
+
+}
+
 </script>
 </body>
 </html>
