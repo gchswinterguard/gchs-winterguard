@@ -162,11 +162,19 @@ footer a{
 
     background-size:cover;
     background-position:center;
+    background-repeat:no-repeat;
+
+    min-height:300px;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
 
     color:white;
     text-align:center;
 
-    padding:100px 20px;
+    padding:50px 20px;
 }
 
 
