@@ -304,123 +304,8 @@ footer a{
 }
 
 /* =========================
-   MOBILE DEVICES
+   MOBILE NAVIGATION
    ========================= */
-
-@media (max-width: 768px) {
-@media (max-width:768px){
-
-    nav{
-        justify-content:space-between;
-        align-items:center;
-        flex-direction:row;
-        position:relative;
-    }
-
-    .menu-toggle{
-        display:block;
-    }
-
-    .nav-links{
-        display:none;
-        position:absolute;
-        top:100%;
-        left:0;
-        width:100%;
-        background:#0f172a;
-        flex-direction:column;
-        text-align:center;
-        padding:15px 0;
-    }
-
-    .nav-links.show{
-        display:flex;
-    }
-
-    .nav-links a{
-        padding:10px 0;
-        margin:0;
-    }
-}
-    nav{
-        flex-direction:column;
-        padding:20px;
-    }
-
-    .nav-links{
-        display:flex;
-        flex-wrap:wrap;
-        justify-content:center;
-        margin-top:15px;
-        gap:10px;
-    }
-
-    .nav-links a{
-        margin:0;
-        font-size:.9rem;
-    }
-
-    .logo{
-        height:80px;
-    }
-
-    .hero{
-        height:70vh;
-        padding:20px;
-    }
-
-    .hero-content h1{
-        font-size:2.5rem;
-    }
-
-    .hero-content h2{
-        font-size:2rem;
-    }
-
-    .hero-content p{
-        font-size:1.1rem;
-    }
-
-    .hero-buttons{
-        display:flex;
-        flex-direction:column;
-        gap:10px;
-    }
-
-    .btn{
-        width:100%;
-        max-width:250px;
-        margin:auto;
-    }
-
-    .quick-links{
-        grid-template-columns:1fr;
-        padding:30px 20px;
-    }
-
-    .staff-gallery{
-        padding:0 15px;
-    }
-
-    .staff-profile{
-        width:100%;
-    }
-
-    .equipment-grid{
-        grid-template-columns:1fr;
-        padding:0 15px;
-    }
-
-    .content-card{
-        margin:30px 15px;
-        padding:25px;
-    }
-
-    .page-header h1{
-        font-size:2rem;
-    }
-
-}
 
 .menu-toggle{
     display:none;
@@ -429,4 +314,112 @@ footer a{
     color:white;
     font-size:2rem;
     cursor:pointer;
+}
+
+/* =========================
+   MOBILE DEVICES
+   ========================= */
+
+@media screen and (max-width:768px){
+
+    nav{
+        flex-direction:row;
+        justify-content:space-between;
+        align-items:center;
+        padding:15px;
+        position:relative;
+    }
+
+    .logo{
+        height:60px;
+    }
+
+    .menu-toggle{
+        display:block;
+    }
+
+    .nav-links{
+        display:none;
+
+        position:absolute;
+        top:100%;
+        left:0;
+
+        width:100%;
+
+        background:#0f172a;
+
+        flex-direction:column;
+        align-items:center;
+
+        padding:15px 0;
+
+        z-index:999;
+    }
+
+    .nav-links.show{
+        display:flex;
+    }
+
+    .nav-links a{
+        margin:8px 0;
+        font-size:1rem;
+    }
+
+    .hero{
+        height:75vh;
+        padding:20px;
+    }
+
+    .hero-content h1{
+        font-size:2.2rem;
+        line-height:1;
+    }
+
+    .hero-content h2{
+        font-size:1.8rem;
+        line-height:1;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .hero-buttons{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+    }
+
+    .btn{
+        width:220px;
+    }
+
+    .quick-links{
+        grid-template-columns:1fr;
+        padding:30px 15px;
+    }
+
+    .equipment-grid{
+        grid-template-columns:1fr;
+    }
+
+    .staff-gallery{
+        justify-content:center;
+    }
+
+    .staff-profile{
+        width:100%;
+        max-width:320px;
+    }
+
+    .content-card{
+        margin:20px;
+        padding:25px;
+    }
+
+    .page-header h1{
+        font-size:2rem;
+    }
 }
